@@ -31,14 +31,19 @@ function getLocation() {
 		text: "This app is to show the people of France that we are thinking of them. Share your location to help show them",   
 		imageUrl: 'france.png',   
 		showCancelButton: true,
-		closeOnConfirm: true, 
+		closeOnConfirm: false, 
+		closeOnCancel: false, 
 		showLoaderOnConfirm: true,
 		}, function(isConfirm){   
 			if (isConfirm) {     
+				swal({   
+					title: 'We are just populating the map',   
+					text: 'Come back later and see how we are doing!',   
+					timer: 4000 });
 			    if (navigator.geolocation) {
 			        navigator.geolocation.getCurrentPosition(initMap);
 			    } else {
-			        x.innerHTML = "Geolocation is not supported by this browser.";
+			        swal("Error", "For some reason we can't get your location, sorry", "error");
 			    }
 			} else {     
 				swal("Cancelled", "We need your location so thanks anyway", "error");
