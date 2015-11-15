@@ -79,23 +79,19 @@ var markers = [];
 function setMarkers(map) {
   // Adds markers to the map.
 var redColor = "rgb(255, 0, 0)";
-var redStrength = 0.8;
-var redSize = 10;
+var strength = 0.8;
+var size = 10;
 
 // This is what a neutral tweet will look like
 var whiteColor = "rgb(255, 255, 255)";
-var whiteStrength = 0.8;
-var whiteSize = 10;
 
 // This is  what a negative tweet will look like
-var blueColour = "rgb(0, 0, 255)";
-var blueStrength = 0.8;
-var blueSize = 10;
+var blueColor = "rgb(0, 0, 255)";
 
 var icon = {
       path: google.maps.SymbolPath.CIRCLE,
-      scale: redSize,
-      fillOpacity: redStrength,
+      scale: size,
+      fillOpacity: strength,
       fillColor: redColor,
       strokeWeight: 0
       }
