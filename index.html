@@ -136,7 +136,7 @@ var icon = {
   });
 }
 
-// Removes the markers from the map, but keeps them in the array.
+// Removes the markers from the map
 function clearMarkers() {
   setMapOnAll(null);
 }
@@ -144,6 +144,7 @@ function setMapOnAll(map) {
   for (var i = 0; i < markers.length; i++) {
     markers[i].setMap(map);
   }
+  markers = [];
 }
 </script>
 </html>
