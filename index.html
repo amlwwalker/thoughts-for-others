@@ -58,7 +58,7 @@ function initMap(position) {
 
 	// center: {lat: -33.9, lng: 151.2}
 	var latLng = {lat: position.coords.latitude, lng: position.coords.longitude};
-  	$.get("?"+storageLocation+"lat="+latLng.lat+"&lng="+latLng.lng, function() {
+  	$.get(storageLocation+"?lat="+latLng.lat+"&lng="+latLng.lng, function() {
   		console.log("stored")
   	})
   var map = new google.maps.Map(document.getElementById('map'), {
