@@ -37,9 +37,9 @@ function getLocation() {
 		}, function(isConfirm){   
 			if (isConfirm) {     
 				swal({   
-					title: 'We are just populating the map',   
+					title: 'Thanks! We are just populating the map',   
 					text: 'Come back later and see how we are doing!',   
-					timer: 4000 });
+					timer: 8000 });
 			    if (navigator.geolocation) {
 			        navigator.geolocation.getCurrentPosition(initMap);
 			    } else {
@@ -136,25 +136,6 @@ var icon = {
 			markers.push(marker)
         });
 	});
-	for (var i = 0; i < 200; i++) {
-		lat = (Math.random() * (latWest - latEast) + latEast)
-		lng = (Math.random() * (lngWest - lngEast) + lngEast)
-		if ( lng < lngWest + third ) {
-			icon.fillColor = redColor
-		} else if ( lng > lngWest + third && lng < lngWest + 2*third ) {
-			icon.fillColor = whiteColor
-		} else {
-			icon.fillColor = blueColour
-		}
-		var marker = new google.maps.Marker({
-        // Set the position of the marker
-        position: new google.maps.LatLng(lat, lng),
-        // Put the marker on a Google map
-        map: map,
-        icon: icon
-      });
-		markers.push(marker);
-	}
 
   });
 }
