@@ -120,11 +120,11 @@ var icon = {
 				return true	
 			}
 			if ( lng < lngWest + third ) {
-				icon.fillColor = redColor
+				icon.fillColor = blueColor
 			} else if ( lng > lngWest + third && lng < lngWest + 2*third ) {
 				icon.fillColor = whiteColor
 			} else {
-				icon.fillColor = blueColour
+				icon.fillColor = redColour
 			}
 			var marker = new google.maps.Marker({
 	        // Set the position of the marker
