@@ -111,11 +111,11 @@ var icon = {
 		$.each(data, function(i, d) {
             var lat =d.lat;
 			var lng = d.lng;
-			if (lng < lngWest || lng > lngEast) {
-				return true
-			} else if (lat < latWest || lat > latEast) {
-				return true	
-			}
+			// if (lng < lngWest || lng > lngEast) {
+			// 	return true
+			// } else if (lat < latWest || lat > latEast) {
+			// 	return true	
+			// }
 			// if ( lng < lngWest + third ) {
 				icon.fillColor = whiteColor;
 			// } else if ( lng > lngWest + third && lng < lngWest + 2*third ) {
