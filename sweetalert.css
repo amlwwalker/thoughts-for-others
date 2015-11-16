@@ -231,7 +231,8 @@
       border-radius: 0;
       border: 0;
       background-position: center center;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat; 
+      width: 100%;}
 
 @-webkit-keyframes showSweetAlert {
   0% {
