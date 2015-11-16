@@ -42,15 +42,15 @@
 .golog-find-ribbon-wrapper.fixed {
     position: fixed
 }
-.golog-find-ribbon-wrapper.left {
-    left: 0
+.golog-find-ribbon-wrapper.right {
+    right: 0
 }
-.golog-find-ribbon-wrapper.left .golog-find-ribbon {
+.golog-find-ribbon-wrapper.right .golog-find-ribbon {
     top: 42px;
-    left: -43px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg)
+    right: -43px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
 }
